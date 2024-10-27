@@ -15,6 +15,7 @@
         <maven.compiler.release>17</maven.compiler.release>
 
         <!-- Library Versions -->
+        <commons-codec.version>1.17.1</commons-codec.version>
         <logback.version>1.5.6</logback.version>
         <slf4j.version>2.0.13</slf4j.version>
         <ossprj-commons.version>1.0.1-SNAPSHOT</ossprj-commons.version>
@@ -100,8 +101,23 @@
                 <artifactId>commons-csv</artifactId>
                 <version>1.10.0</version>
             </dependency>
+            <dependency>
+                <groupId>org.apache.commons</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
+            <dependency>
+                <groupId>commons-codec</groupId>
+                <artifactId>commons-codec</artifactId>
+                <version>${commons-codec.version}</version>
+            </dependency>
 
             <!-- Commons (OssPrj) -->
+            <dependency>
+                <groupId>com.ossprj.commons</groupId>
+                <artifactId>ossprj-commons-file</artifactId>
+                <version>${ossprj-commons.version}</version>
+            </dependency>
             <dependency>
                 <groupId>com.ossprj.commons</groupId>
                 <artifactId>ossprj-commons-web</artifactId>
